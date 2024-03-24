@@ -69,14 +69,14 @@
   */
 typedef enum
 {
- LED1 = 0,
- LED_GREEN = LED1,
- LED2 = 1,
- LED_ORANGE = LED2,
- LED3 = 2,
- LED_RED = LED3,
- LED4 = 3,
- LED_BLUE = LED4
+ LED0 = 0,
+ LED_GREEN = LED0,
+ LED_1 = 1,
+ LED_ORANGE = LED_1,
+ LED_2 = 2,
+ LED_RED = LED_2,
+ LED_3 = 3,
+ LED_BLUE = LED_3
 
 } Led_TypeDef;
 

@@ -37,6 +37,7 @@
   */
 
 #include <LCD_Driver/inc/otm8009a.h>
+#include "stm32f4xx_hal.h"
 
 /** @addtogroup BSP
   * @{
@@ -427,6 +428,11 @@ uint8_t OTM8009A_Init(uint32_t ColorCoding, uint32_t orientation)
   DSI_IO_WriteCmd(0, (uint8_t *)ShortRegData45);
 
   return 0;
+}
+
+void OTM8009A_IO_Delay(uint32_t Delay)
+{
+  HAL_Delay(Delay);
 }
 
 /**
